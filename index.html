@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Integrador - ALUMNI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container-sm">
+
+
+    <header>
+      <nav></nav>
+      <section id="hero">
+        <div class="row text-center justify-content-center ">
+          <h1 class="hero__title my-5 display-3">Diseño de interiores <br>La mejor calidad</h1>
+          <p class="hero__subtitle col-10 col-md-8 mb-5 fs-6">Pellentesque etiam blandit in tincidunt at donec. Eget
+            ipsum
+            dignissim placerat
+            nisi,adipiscing mauris non. Purus parturient viverra nunc, tortor sit laoreet. Quam
+            tincidunt aliquam.</p>
+          <img src="imagenes/living.png" alt="foto de un living" class="hero__img img-fluid">
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="teContamos">
+
+        <div class="d-flex justify-content-center justify-content-md-between align-items-center mb-5  ">
+          <div class="text-center text-sm-start">
+            <span>BENEFICIOS</span>
+            <h2 class="teContamos__title display-5  ">Te contamos más
+              <br> sobre quienes somos
+            </h2>
+          </div>
+          <p class="teContamos__description d-none d-md-block  ">Pellentesque etiam blandit in tincidunt at donec. Eget
+            ipsum
+            dignissim
+            placerat nisi, adipiscing mauris non purus parturient. Pellentesque etiam blandit in
+            tincidunt
+            at donec.</p>
+        </div>
+
+
+        <div
+          class="card-container row d-flex  justify-content-md-between  flex-column flex-lg-row text-center text-md-start">
+          <article class="card col-12 col-lg-3  ">
+            <h3>Diferentes estilos</h3>
+            <p class="fs-6 col-12 ">Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim
+              placerat
+              nisi,
+              adipiscing
+              mauris non. </p>
+          </article>
+          <article class="card col-12 col-lg-3">
+            <h3>Entregas inmediatas</h3>
+            <p class="fs-6 col-12 ">Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim
+              placerat
+              nisi,
+              adipiscing
+              mauris non. </p>
+          </article>
+          <article class="card col-12 col-lg-3">
+            <h3>Precios accesibles</h3>
+            <p class="fs-6 col-12 ">Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim
+              placerat
+              nisi,
+              adipiscing
+              mauris non. </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="queOfrecemos">
+
+        <div class="text-center">
+          <span>¿QUÉ OFRECEMOS?</span>
+
+          <div class="row text-center justify-content-center ">
+            <h2 class="queOfrecemos__title mt-3 mb-5 display-5 ">Estilo y diseño</h2>
+
+            <p class="queOfrecemos__description col-10 col-md-6 mb-5">Pellentesque etiam blandit in tincidunt at donec.
+              Eget ipsum
+              dignissim placerat nisi,
+              adipiscing
+              mauris non purus parturient.</p>
+          </div>
+
+          <div class="row p-0 gallery justify-content-evenly flex-column flex-md-row  align-items-center">
+            <img src="imagenes/foto1.png" alt="" class="gallery__pic col-10 col-md-4 my-2">
+            <img src="imagenes/foto2.png" alt="" class="gallery__pic col-10 col-md-4 my-2">
+            <img src="imagenes/foto3.png" alt="" class="gallery__pic col-10 col-md-4 my-2">
+          </div>
+        </div>
+      </section>
+
+      <!-- BOTÓN PARA ABRIR EL MODAL -->
+
+      <div class="row justify-content-center">
+        <button type="button" class="btn btn-secondary col-5 col-md-3" data-bs-toggle="modal"
+          data-bs-target="#modalContacto">
+          CONTÁCTENOS
+        </button>
+      </div>
+
+      <!-- MODAL PARA INCLUIR EL FORMULARIO DE CONTACTO -->
+      <div class="modal fade container-fluid " id="modalContacto" tabindex="-1" data-bs-keyboard="false"
+        data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered  modal-lg  ">
+          <div class="modal-content  ">
+            <div class="modal-header  ">
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body  ">
+              <h5 class="modal-title text-center mb-3 ">FORMULARIO DE CONTACTO</h5>
+              <!-- FORMULARIO DE CONTACTO --->
+              <div class="row justify-content-center w-75 mx-auto">
+                <form class="form-control m-auto text-light shadow needs-validation" novalidate action="data.php"
+                  method="post">
+                  <div class="row justify-content-center px-1 py-3  ">
+                    <div class="col-12 col-md-6">
+                      <label for="email" class="form-label">Ingrese dirección de e-mail:</label>
+                      <input id="email" type="email" class="form-control" value="" required>
+                      <div class="valid-feedback"> </div>
+                      <div class="invalid-feedback "></div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="nombre" class="form-label">Ingrese su nombre completo:</label>
+                      <input type="text" id="nombre" class="form-control" required>
+                      <div class="valid-feedback"> </div>
+                      <div class="invalid-feedback "></div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center px-3 py-3">
+                    <label for="comments" class="form-label me-4">Deje sus comentarios:</label>
+                    <textarea name="comentarios" id="comments" class="form-control"
+                      placeholder="Deje aquí sus comentarios, motivo del contacto" required></textarea>
+                    <div class="valid-feedback"> </div>
+                    <div class="invalid-feedback "></div>
+                  </div>
+                  <div class="row justify-content-center my-3">
+                    <button type="submit" class="btn btn-success col-10 col-md-3 mx-2 my-2  ">ENVIAR</button>
+                    <button type="reset" class="btn btn-light col-10 col-md-3 mx-2 my-2 ">BORRAR</button>
+                    <!-- FIN DEL FORMULARIO -->
+                  </div>
+                </form>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-dark col-5 col-md-2 mx-auto my-2 btn-cancel "
+                data-bs-dismiss="modal">CANCELAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer></footer>
+
+
+  </div>
+
+
+
+
+</body>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+</script>
+
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --main_color: #15163d;
+    --sec_color: #71718d;
+    --ter_color: #0a2ff1;
+    --bg_color: #f8f8f8;
+
+}
+
+
+body {
+    background: var(--bg_color);
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: "Kiwi Maru", serif;
+    color: var(--main_color);
+}
+
+span,
+p,
+a {
+    font-family: "Open Sans";
+}
+
+a {
+    font-weight: 600;
+}
+
+span {
+    color: var(--ter_color);
+    margin: 20px 0;
+}
+
+#hero p,
+#beneficios p,
+#queOfrecemos {
+    color: var(--sec_color);
+}
+
+section {
+    margin: 80px 0;
+}
+
+
+.teContamos__description {
+    width: 40%;
+}
+
+.card {
+    min-width: 30%;
+    padding: 30px 10px;
+    border: none;
+
+    * {
+        margin: 10px 0;
+    }
+}
+
+.btn-success {
+    border: 1px solid white;
+}
+
+.btn-success:hover {
+    background-color: limegreen;
+    border: 1px solid white;
+}
+
+.btn-cancel:hover {
+    background-color: red;
+    color: white;
+}
+
+.invalid-feedback::after {
+    content: "Revisar!";
+    box-sizing: border-box;
+    position: absolute;
+    color: orangered;
+
+}
+
+.modal-header,
+.modal-footer {
+    border: none
+}
+
