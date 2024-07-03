@@ -75,13 +75,13 @@ section {
     color: white;
 }
 
-.invalid-feedback::after {
-    content: "Revisar!";
+/* .invalid-feedback::after {
+    content: "";
     box-sizing: border-box;
     position: absolute;
     color: orangered;
 
-}
+} */
 
 .modal-header,
 .modal-footer {
