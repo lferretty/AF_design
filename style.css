@@ -88,3 +88,6 @@ section {
     border: none
 }
 
+.btn{
+    border-radius: 0;
+}
