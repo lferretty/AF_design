@@ -29,7 +29,7 @@ a,
     font-weight: 600;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: grey;
     text-decoration: underline;
 }
@@ -47,7 +47,7 @@ span {
 }
 
 section {
-    padding: 120px 0 0  0;
+    padding: 120px 0 0 0;
 }
 
 
@@ -95,3 +95,20 @@ section {
 .btn {
     border-radius: 0;
 }
+
+.gallery div a {
+    display: block;
+    height: 150px;
+    overflow: hidden;
+}
+
+.img-thumbnail {
+    padding: 0;
+ 
+}
+
+/* qué hace esto ↓ */
+.gallery>:nth-child(2)>a>img{
+    position: relative;
+    bottom:70px;
+} /* dado que la segunda thumbnail es más alta que el resto, en lugar de editar la imagen, este selector la encuentra y la posiciona, respecto a su contenedor, un poco más arriba, para centrarla */
