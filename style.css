@@ -30,8 +30,8 @@ a,
 }
 
 .nav-link:hover {
-    color: grey;
-    text-decoration: underline;
+    color: var(--ter_color);
+
 }
 
 
@@ -112,3 +112,11 @@ section {
     position: relative;
     bottom:70px;
 } /* dado que la segunda thumbnail es más alta que el resto, en lugar de editar la imagen, este selector la encuentra y la posiciona, respecto a su contenedor, un poco más arriba, para centrarla */
+
+
+.navbar-toggler,
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
